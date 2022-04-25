@@ -1,12 +1,16 @@
 {
   "name": "cabrera",
   "version": "1.0.0",
-  "repository": "https://github.com/Ikenobiq/mark-cabrera.git",
+  "homepage": "https://Ikenobiq.github.io/mark-cabrera",
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/Ikenobiq/mark-cabrera.git"
+  },
   "author": "Andrii Ivanichenko <ikenobiq@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "parcel src/index.html",
-     "build": "parcel build src/index.html --public-url /cabrera/",
+     "build": "parcel build src/index.html --public-url /mark-cabrera/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
