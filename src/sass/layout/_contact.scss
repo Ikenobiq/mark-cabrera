@@ -1,0 +1,119 @@
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.795)),
+    url(../images/contactHouse.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 50px auto 0 auto;
+  max-width: 1600px;
+  padding: 150px 0px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__hello-form-wrapper {
+    min-width: 700px;
+  }
+  &__hello {
+    margin-bottom: 50px;
+  }
+  &__hello-heading {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--main-background);
+  }
+  &__hello-paragraph {
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--main-background);
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  &__area {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    &-form {
+      margin-right: 20px;
+
+      &:last-child {
+        margin: 0px;
+      }
+    }
+  }
+  &__form-input {
+    min-width: 220px;
+    padding: 12px;
+  }
+  &__message {
+    padding: 12px;
+    min-width: 700px;
+    min-height: 134px;
+    margin-bottom: 50px;
+  }
+  .button {
+    border-radius: 0px;
+    &:hover,
+    &:focus {
+      box-shadow: 0 10px 15px #ffffff53;
+      color: var(--contact-main);
+      background-color: var(--main-background);
+    }
+  }
+  &__information {
+    border: solid 10px var(--main-background);
+    padding: 86px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+    }
+    &-item {
+      margin-bottom: 30px;
+      color: var(--accent-text);
+      font-size: 18px;
+      font-weight: 700;
+      max-width: 310px;
+      &:last-child {
+        margin: 0px;
+      }
+    }
+
+    &-icon {
+      margin-top: 50px;
+      &-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+
+      &-item {
+        margin-right: 40px;
+        cursor: pointer;
+
+        &:last-child {
+          margin: 0px;
+        }
+      }
+      &-svg {
+        fill: var(--accent-text);
+        transition: 300ms ease all;
+        &:hover,
+        &:focus {
+          fill: var(--main-background);
+        }
+      }
+    }
+  }
+}

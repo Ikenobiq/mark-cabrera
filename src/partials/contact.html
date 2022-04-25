@@ -1,0 +1,96 @@
+<section class="contact">
+  <div class="contact__wrapper container">
+    <div class="contact__hello-form-wrapper">
+      <div class="contact__hello">
+        <h3 class="contact__hello-heading">Contact me</h3>
+        <p class="contact__hello-paragraph">Get in touch</p>
+      </div>
+      <form class="contact__form" action="#">
+        <div>
+          <div class="contact__area">
+            <div class="contact__area-form">
+              <label class="contact__form-field" for="text">
+                <input
+                  type="text"
+                  name="user-name"
+                  class="contact__form-input"
+                  required
+                  minlength="2"
+                  pattern="[a-zA-Zа-яёА-ЯЁ]+"
+                  placeholder="Full Name*"
+                />
+              </label>
+            </div>
+            <div class="contact__area-form">
+              <label class="contact__field" for="tel">
+                <input
+                  type="tel"
+                  name="user-phone"
+                  class="contact__form-input"
+                  title="000-000-00-00"
+                  placeholder="Phone Number"
+                />
+              </label>
+            </div>
+            <div class="contact__area-form">
+              <label class="contact__field" for="email">
+                <input
+                  type="email"
+                  name="user-email"
+                  class="contact__form-input"
+                  required
+                  minlength="2"
+                  placeholder="Email*"
+                />
+              </label>
+            </div>
+          </div>
+          <label class="contact__field">
+            <textarea
+              name="user-message"
+              class="contact__message"
+              placeholder="Message"
+            ></textarea>
+          </label>
+        </div>
+        <button type="submit" class="button contact__button">
+          Send Message
+        </button>
+      </form>
+    </div>
+    <div class="contact__information">
+      <ul class="contact__information-list">
+        <li class="contact__information-item">
+          <p class="contact__information-paragraph">+1 (240) 463-6911</p>
+        </li>
+        <li class="contact__information-item">
+          <p class="contact__information-paragraph">mark.treo@gmail.com</p>
+        </li>
+        <li class="contact__information-item">
+          <p class="contact__information-paragraph">
+            3750 University Boulevard West, Kensington, MD 20895
+          </p>
+        </li>
+      </ul>
+      <div class="contact__information-icon">
+        <ul class="contact__information-icon-list">
+          <li class="contact__information-icon-item">
+            <svg class="contact__information-icon-svg" width="35" height="35">
+              <use href="./images/sprite.svg#facebook"></use>
+            </svg>
+          </li>
+          <li class="contact__information-icon-item">
+            <svg class="contact__information-icon-svg" width="35" height="35">
+              <use href="./images/sprite.svg#instagram"></use>
+            </svg>
+          </li>
+          <li class="contact__information-icon-item">
+            <svg class="contact__information-icon-svg" width="35" height="35">
+              <use href="./images/sprite.svg#telegram"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

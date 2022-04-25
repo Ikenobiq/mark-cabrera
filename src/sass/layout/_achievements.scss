@@ -1,0 +1,30 @@
+.achievements {
+    background-image: linear-gradient(to bottom,
+        var(--main-background) 50px,
+        var(--accent-text) 50px);
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 50px 0px;
+ 
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+    &__item {
+        margin: 0px 10px;
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--main-background);
+        font-size: 24px;
+        font-weight: 400;
+        &-amount {
+            font-size: 87px;
+            font-weight: 600;
+        }
+    }
+}

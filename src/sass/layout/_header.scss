@@ -1,0 +1,84 @@
+.header {
+  padding: 10px 0px;
+  background-color: var(--main-background);
+  border-bottom: 1px solid #25252a;
+  &_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo-menu-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__logo-div {
+    margin-right: 50px;
+  }
+  &__logo-img {
+    width: 70px;
+    transition: 300ms ease all;
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+  }
+  &__menu-div {
+    margin-right: 50px;
+  }
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    list-style: none;
+  }
+  &__nav-item {
+    margin-right: 50px;
+  }
+  &__nav-link {
+    text-decoration: none;
+    color: var(--accent-text);
+    font-weight: 600;
+    font-size: 18px;
+    transition: 300ms ease all;
+    &:hover,
+    &:focus {
+      color: var(--main-text);
+    }
+  }
+  &__contact {
+    display: flex;
+  }
+  &__contact-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--main-text);
+    border: 2px solid var(--main-text);
+    padding: 23px 15px;
+    border-bottom-right-radius: 14px;
+    border-top-left-radius: 14px;
+    transition: 300ms ease all;
+    &:last-child {
+      margin: 0px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--main-text);
+      color: var(--main-background);
+      fill: currentColor;
+     
+    }
+  }
+  &__contact-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    &:hover,
+    &:focus {
+      fill: currentColor;
+    }
+  }
+}
