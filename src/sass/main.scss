@@ -5,6 +5,7 @@
 @import "./layout/_benefits";
 @import "./layout/_achievements";
 @import "./layout/_contact";
+@import "./layout/_reviews";
 
 // base
 @import "./base/_base";
@@ -16,3 +17,5 @@
 // utils
 @import "./utils/_variables";
 @import "./utils/_visually-hidden";
+@import "./utils/_simple-adaptive-slider.min";
+

@@ -40,9 +40,27 @@
     font-weight: 600;
     font-size: 18px;
     transition: 300ms ease all;
-    &:hover,
-    &:focus {
-      color: var(--main-text);
+    position: relative;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -o-transition: 2s ease;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 1.5px;
+      background-color: var(--accent-text);
+      transition: width 0.75s;
+      
+    }
+
+    &:hover::before,
+    &:focus::before {
+      width: 100%;
+      transition: width 0.75s;
     }
   }
   &__contact {

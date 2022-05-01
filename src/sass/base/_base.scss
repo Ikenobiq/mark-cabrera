@@ -88,8 +88,8 @@ video {
   vertical-align: baseline;
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
 
 /* HTML5 display-role reset for older browsers */
 
@@ -137,7 +137,6 @@ q {
 }
 
 blockquote {
-
   &:before,
   &:after {
     content: "";
@@ -146,7 +145,6 @@ blockquote {
 }
 
 q {
-
   &:before,
   &:after {
     content: "";

@@ -13,6 +13,17 @@
   padding-top: 25px;
   margin: 0 auto;
   position: relative;
+  animation: 5s show cubic-bezier(.17, .52, .83, .67);
+
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 
   &__wrapper {
     display: flex;
@@ -31,7 +42,17 @@
       position: relative;
       margin-left: 25px;
       margin-bottom: 10px;
-     
+      animation: 2s show ease;
+      
+      @keyframes show {
+        from {
+          opacity: 0;
+        }
+      
+        to {
+          opacity: 1;
+        }
+      }
 
       &::before {
         content: " ";
@@ -50,7 +71,17 @@
       line-height: 80px;
       letter-spacing: 3px;
       margin-left: 70px;
-        
+      animation: 4s show ease;
+      
+      @keyframes show {
+        from {
+          opacity: 0;
+        }
+      
+        to {
+          opacity: 1;
+        }
+      }
     }
     &-heading {
       font-size: 80px;
@@ -60,7 +91,17 @@
       letter-spacing: 3px;
       line-height: 80px;
       margin-left: 70px;
+      animation: 4s show ease;
       
+      @keyframes show {
+        from {
+          opacity: 0;
+        }
+      
+        to {
+          opacity: 1;
+        }
+      }
     }
     &-tagline {
       font-size: 60px;
@@ -69,7 +110,18 @@
       margin-bottom: 50px;
       display: inline-block;
       position: relative;
-     
+      animation: 7s show ease;
+      
+      @keyframes show {
+        from {
+          opacity: 0;
+        }
+      
+        to {
+          opacity: 1;
+        }
+      }
+
       &::after {
         content: "";
         position: absolute;
@@ -87,7 +139,17 @@
   &__img {
     display: flex;
     flex-shrink: 1;
+animation: 7s show ease;
 
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
     top: 0px;
     left: 0px;
     &-photo {
