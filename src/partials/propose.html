@@ -3,27 +3,46 @@
     <div class="propose__main">
       <ul class="propose__list">
         <li class="propose__item">
-          <button class="propose__btn" title="Click to read more">
+          <input
+            class="propose__radio"
+            type="radio"
+            id="buy"
+            name="propose"
+            checked
+          />
+          <label class="propose__btn" for="buy">
             <div class="propose__item-wrapper">
               <svg class="propose__item-svg" width="64" height="64">
                 <use href="./images/sprite.svg#buyHouse"></use>
               </svg>
             </div>
             <h3 class="propose__item-heading">Buying a Home</h3>
-          </button>
+          </label>
         </li>
         <li class="propose__item">
-          <button class="propose__btn" title="Click to read more">
+          <input
+            class="propose__radio"
+            type="radio"
+            id="selling"
+            name="propose"
+          />
+          <label class="propose__btn" for="selling">
             <div class="propose__item-wrapper">
               <svg class="propose__item-svg" width="64" height="64">
                 <use href="./images/sprite.svg#soldHouse"></use>
               </svg>
             </div>
             <h3 class="propose__item-heading">Selling Your Home</h3>
-          </button>
+          </label>
         </li>
         <li class="propose__item">
-          <button class="propose__btn" title="Click to read more">
+          <input
+            class="propose__radio"
+            type="radio"
+            id="advice"
+            name="propose"
+          />
+          <label class="propose__btn" for="advice">
             <div class="propose__item-wrapper">
               <svg class="propose__item-svg" width="64" height="64">
                 <use href="./images/sprite.svg#advice"></use>
@@ -32,22 +51,89 @@
             <h3 class="propose__item-heading">
               Real estate assistance and advice
             </h3>
-          </button>
+          </label>
         </li>
         <li class="propose__item">
-          <button class="propose__btn" title="Click to read more">
+          <input class="propose__radio" type="radio" id="deal" name="propose" />
+          <label class="propose__btn" for="deal">
             <div class="propose__item-wrapper">
               <svg class="propose__item-svg" width="64" height="64">
                 <use href="./images/sprite.svg#handshake"></use>
               </svg>
             </div>
             <h3 class="propose__item-heading">Сlosing the deal</h3>
-          </button>
+          </label>
         </li>
       </ul>
     </div>
-    <div class="propose__info">
+    <div class="propose__info propose__info-active">
       <h3 class="propose__info-heading">Buying a Home</h3>
+      <p class="propose__info-paragraph">
+        Buying a home is an exciting and complex adventure. It can also be a
+        very time-consuming and costly one if you're not familiar with all
+        aspects of the process, and don't have all the best information and
+        resources at hand.
+      </p>
+      <p class="propose__info-paragraph">
+        One of my specialties is representing the best interests of Kensington
+        area buyers throughout the home buying process. My comprehensive,
+        high-quality services can save you time and money, as well as make the
+        experience more enjoyable and less stressful.
+      </p>
+      <p class="propose__info-paragraph">
+        If you're like most people, buying a home is the biggest investment you
+        will ever make. So whether you're buying a starter home, your dream home
+        or an investment property, why not take advantage of my experience as a
+        local market expert for Kensington to make the most informed decisions
+        you can, every step of the way?
+      </p>
+    </div>
+    <div class="propose__info">
+      <h3 class="propose__info-heading">Selling Your Home</h3>
+      <p class="propose__info-paragraph">
+        Buying a home is an exciting and complex adventure. It can also be a
+        very time-consuming and costly one if you're not familiar with all
+        aspects of the process, and don't have all the best information and
+        resources at hand.
+      </p>
+      <p class="propose__info-paragraph">
+        One of my specialties is representing the best interests of Kensington
+        area buyers throughout the home buying process. My comprehensive,
+        high-quality services can save you time and money, as well as make the
+        experience more enjoyable and less stressful.
+      </p>
+      <p class="propose__info-paragraph">
+        If you're like most people, buying a home is the biggest investment you
+        will ever make. So whether you're buying a starter home, your dream home
+        or an investment property, why not take advantage of my experience as a
+        local market expert for Kensington to make the most informed decisions
+        you can, every step of the way?
+      </p>
+    </div>
+    <div class="propose__info">
+      <h3 class="propose__info-heading">Real estate assistance and advice</h3>
+      <p class="propose__info-paragraph">
+        Buying a home is an exciting and complex adventure. It can also be a
+        very time-consuming and costly one if you're not familiar with all
+        aspects of the process, and don't have all the best information and
+        resources at hand.
+      </p>
+      <p class="propose__info-paragraph">
+        One of my specialties is representing the best interests of Kensington
+        area buyers throughout the home buying process. My comprehensive,
+        high-quality services can save you time and money, as well as make the
+        experience more enjoyable and less stressful.
+      </p>
+      <p class="propose__info-paragraph">
+        If you're like most people, buying a home is the biggest investment you
+        will ever make. So whether you're buying a starter home, your dream home
+        or an investment property, why not take advantage of my experience as a
+        local market expert for Kensington to make the most informed decisions
+        you can, every step of the way?
+      </p>
+    </div>
+    <div class="propose__info">
+      <h3 class="propose__info-heading">Сlosing the deal</h3>
       <p class="propose__info-paragraph">
         Buying a home is an exciting and complex adventure. It can also be a
         very time-consuming and costly one if you're not familiar with all
@@ -70,3 +156,48 @@
     </div>
   </div>
 </section>
+
+<!-- 
+<li class="propose__item">
+  <button type="button" id="propose_button" class="propose__btn propose__btn-active" title="Click to read more">
+    <div class="propose__item-wrapper">
+      <svg class="propose__item-svg" width="64" height="64">
+        <use href="./images/sprite.svg#buyHouse"></use>
+      </svg>
+    </div>
+    <h3 class="propose__item-heading">Buying a Home</h3>
+  </button>
+</li>
+<li class="propose__item">
+  <button type="button" id="propose_button" class="propose__btn" title="Click to read more">
+    <div class="propose__item-wrapper">
+      <svg class="propose__item-svg" width="64" height="64">
+        <use href="./images/sprite.svg#soldHouse"></use>
+      </svg>
+    </div>
+    <h3 class="propose__item-heading">Selling Your Home</h3>
+  </button>
+</li>
+<li class="propose__item">
+  <button type="button" id="propose_button" class="propose__btn" title="Click to read more">
+    <div class="propose__item-wrapper">
+      <svg class="propose__item-svg" width="64" height="64">
+        <use href="./images/sprite.svg#advice"></use>
+      </svg>
+    </div>
+    <h3 class="propose__item-heading">
+      Real estate assistance and advice
+    </h3>
+  </button>
+</li>
+<li class="propose__item">
+  <button type="button" id="propose_button" class="propose__btn" title="Click to read more">
+    <div class="propose__item-wrapper">
+      <svg class="propose__item-svg" width="64" height="64">
+        <use href="./images/sprite.svg#handshake"></use>
+      </svg>
+    </div>
+    <h3 class="propose__item-heading">Сlosing the deal</h3>
+  </button>
+</li>
+</ul> -->

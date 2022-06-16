@@ -6,3 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
     swipe: true,
   });
 });
+
+const proposeButton = document.querySelector(".propose__list");
+proposeButton.addEventListener("click", () => {
+  console.log("hi")
+});
+const proposeInfo = document.querySelector('.propose__info')

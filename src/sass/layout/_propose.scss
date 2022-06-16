@@ -52,6 +52,31 @@
       fill: var(--accent-text);
     }
   }
+  &__radio:checked + &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: var(--main-background);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 40px;
+    box-shadow: 25px 25px 30px 0px #da133453;
+    cursor: pointer;
+    background-color: var(--accent-text);
+    width: 300px;
+    height: 350px;
+    border-style: none;
+    transition: 300ms ease all;
+    transform: scale(1.1);
+    & svg {
+      fill: var(--accent-text);
+    }
+    & svg {
+      fill: var(--accent-text);
+    }
+  }
   &__item {
     &:nth-child(odd) {
       margin-right: 50px;
@@ -78,8 +103,12 @@
     }
   }
   &__info {
-    display: flex;
+    display: none;
     flex-direction: column;
+
+    &-active {
+      display: flex;
+    }
 
     &-heading {
       color: var(--main-background);
@@ -109,4 +138,12 @@
       margin-bottom: 20px;
     }
   }
+}
+#buy,
+#selling,
+#advice,
+#deal {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
